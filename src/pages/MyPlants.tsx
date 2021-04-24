@@ -15,6 +15,7 @@ import { formatDistance } from 'date-fns';
 import { pt } from 'date-fns/locale';
 import fonts from '../styles/fonts';
 import { PlantCardSecondary } from '../components/PlantCardSecondary';
+import { Load } from '../components/Load';
 
 
 export function MyPlants() {
@@ -44,7 +45,9 @@ export function MyPlants() {
 
   },[]);
 
-
+  if(loading)
+    return <Load />
+    
   return (
     <View style={styles.container}>
       <Header />
