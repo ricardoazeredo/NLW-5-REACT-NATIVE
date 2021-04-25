@@ -190,11 +190,11 @@ const styles = StyleSheet.create({
     lineHeight: 20,    
   },
   enviromentList: {
-    height: 40,
+    height: 50,   
     justifyContent: 'center',
     paddingBottom: 5,
-    marginLeft: 32,
-    marginVertical: 32
+    //marginLeft: 32,    
+    marginVertical: 32,    
   },
   plants: {
     flex: 1,
